@@ -1,9 +1,7 @@
 pipeline {
     agent { label 'workstation'}
     stages {
-        stage('Build'){
-         steps { sh 'mvn clean package'  }
-         }
+
         stage('Unit Test'){
          steps { echo "Unit testing"  }
          }
